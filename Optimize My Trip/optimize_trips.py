@@ -9,7 +9,7 @@ from deap import algorithms
 import random
 import csv
 
-gmaps = googlemaps.Client(key='AIzaSyC8eX8ttiPZSwQiYw1vsIVdw5IuXthTIh4')
+gmaps = googlemaps.Client(key='Enter your Key')
 
 citys = ['New Delhi', 'Hyderabad', 'Itanagar', 'Dispur', 'Patna', 'Raipur', 'Panaji', 'Gandhinagar', 'Chandigarh', 'Shimla', 'Srinagar', 'Ranchi', 'Bengaluru', '	Thiruvananthapuram', 'Bhopal', 'Mumbai', 'Imphal', 'Shillong', 'Aizwal', 'Kohima', 'Bhubaneshwar', 'Jaipur', 'Gangtok', 'Chennai', 'Agartala', 'Lucknow', 'Dehradun', 'Kolkata']
 
