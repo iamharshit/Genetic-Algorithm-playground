@@ -14,14 +14,22 @@ The algorithm is inspired from the way birds search for food in groups.
 * Now, they finds the person among themselves who has the best value.In next iteration each person moves 15steps towards that person to come to a new point and again they uses the machine to  find the amount of iron beanth their point.Then they finds the person among themselves again and the process continues ......
 * This is done untill they each of them comes to a single point or they reach a descent enough point or they starts sweating.
 * Analogies:
- The Strategy = Particle Swarm Optimisation
- Mettalurgist = Particle
- Task = Optimum point
- Choosen Point = Candidate Solution
- Machine = Fitness function
- 15 steps = Velocity
- Reach a descent enough point = minimum error criteria attained
- Starts sweating = Maximum iteration reached 
+
+    The Strategy = Particle Swarm Optimisation
+ 
+    Mettalurgist = Particle
+ 
+    Task = Optimum point
+ 
+    Choosen Point = Candidate Solution
+ 
+    Machine = Fitness function
+ 
+    15 steps = Velocity
+ 
+    Reach a descent enough point = minimum error criteria attained
+ 
+    Starts sweating = Maximum iteration reached 
 * Note: In actual instead of having a fixed velocity(here 15 steps) in PSO their is a formulae to calculate velocity of each particle.
 
 ### Pseudo-code :
