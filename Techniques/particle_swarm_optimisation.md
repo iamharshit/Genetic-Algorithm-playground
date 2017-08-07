@@ -2,7 +2,7 @@
 It is an optimisation technique i.e given a function we need to find the best possible solution.Brother of Genetic Algo.	
 
 ### Inspiration:
-The algorithm is inspired from the way birds fly in groups.
+The algorithm is inspired from the way birds search for food in groups.
 
 ### Terminology:
 * In Gen algo where the potential solutions are called "Organisms", here the potential solutions are called "Particles"(although it should have been called "Bird")
