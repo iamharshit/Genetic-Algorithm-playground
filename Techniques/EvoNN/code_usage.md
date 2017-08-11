@@ -21,68 +21,68 @@ To know the parameters list , see the codes ( change variables setslog name )
 
 ### How to run the Code?
 
------------------------------------------------------------------------------------
-Step 1 : Importing data
------------------------------------------------------------------------------------
-Things to remember :
-- Do not convert whole data into text type
-- Also remember to convert the variables on first 2 lines to text
-- Duplicate the first line and overwrite the second line of variable( I don't know y, but krna h)
 
-In the Home menu , there is import data. Click on that.
+* Step 1 : Importing data
 
-After that, select the file to be imported ( CSV only)
+    Things to remember :
+    - Do not convert whole data into text type
+    - Also remember to convert the variables on first 2 lines to text
+    - Duplicate the first line and overwrite the second line of variable( I don't know y, but krna h)
 
-Now save the whole data as a CELL ARRAY in any variable ( dataSet )
+    In the Home menu , there is import data. Click on that.
 
-Now select first 2 rows and convert them to text.
+    After that, select the file to be imported ( CSV only)
 
-Save the first 2 rows as dataVar
------------------------------------------------------------------------------------
-Step 2: Saving workspace data into matlab file
------------------------------------------------------------------------------------
-Now close the Import data window. On the rightmost pane , you can see your workspace data.
+    Now save the whole data as a CELL ARRAY in any variable ( dataSet )
 
-Right click on that and save your data as matlab file. Save both dataSet and dataVar as set.mat and var.mat.
------------------------------------------------------------------------------------
-Step 3: Open PPNGA_subsets.m
------------------------------------------------------------------------------------
-Change
-Data = 'set.mat';
-DATANAME='var.mat';
+    Now select first 2 rows and convert them to text.
 
-Remember to set these:
+    Save the first 2 rows as dataVar  
 
-in_index = [1:7] // Depends on dataset
-out_index = [x] ( x= 8 for first time and 9 for second time)
+* Step 2: Saving workspace data into matlab file
 
-Now run from editor menu and get 2 setslog file.
------------------------------------------------------------------------------------
-Step 4: Open output.m
------------------------------------------------------------------------------------
-// Set yours setslog name below . setslog will be generated after step 3. Also remember this command will run twice for 2 SETSLOG
+    Now close the Import data window. On the rightmost pane , you can see your workspace data.
 
-Run below command :
-err_table = output('Your_Setslog.mat')
+    Right click on that and save your data as matlab file. Save both dataSet and dataVar as set.mat and var.mat.
 
-Run and SAVE ALL IMAGES.
------------------------------------------------------------------------------------
-Step 5: Open PPopt.m
------------------------------------------------------------------------------------
-// Set yours setslog name in the below variables . setslog will be generated after step 3.
+* Step 3: Open PPNGA_subsets.m
 
-Setslog(1) = {'Setslog5-13_shanker.mat'};
-Setslog(2) = {'Setslog5-14_shanker.mat'};
+    Change
+    Data = 'set.mat';
+    DATANAME='var.mat';
 
-Run and SAVE ALL IMAGES.
------------------------------------------------------------------------------------
-Step6 : Open SVR.m
------------------------------------------------------------------------------------
-response = svr('Your_Setslog1.mat', 'figl', 'trend.mat');
-Run and SAVE ALL 8 IMAGES SAVED in code directory.
+    Remember to set these:
 
-response = svr('Your_Setslog2.mat', 'figl', 'trend.mat');
-Run and SAVE ALL 8 IMAGES SAVED in code directory.
+    in_index = [1:7] // Depends on dataset
+    out_index = [x] ( x= 8 for first time and 9 for second time)
+
+    Now run from editor menu and get 2 setslog file.
+
+* Step 4: Open output.m
+
+    // Set yours setslog name below . setslog will be generated after step 3. Also remember this command will run twice for 2 SETSLOG
+
+    Run below command :
+    err_table = output('Your_Setslog.mat')
+
+    Run and SAVE ALL IMAGES.
+
+* Step 5: Open PPopt.m
+
+    // Set yours setslog name in the below variables . setslog will be generated after step 3.
+
+    Setslog(1) = {'Setslog5-13_shanker.mat'};
+    Setslog(2) = {'Setslog5-14_shanker.mat'};
+
+    Run and SAVE ALL IMAGES.
+
+* Step6 : Open SVR.m
+
+    response = svr('Your_Setslog1.mat', 'figl', 'trend.mat');
+    Run and SAVE ALL 8 IMAGES SAVED in code directory.
+
+    response = svr('Your_Setslog2.mat', 'figl', 'trend.mat');
+    Run and SAVE ALL 8 IMAGES SAVED in code directory.
 
 -----------------------------------------------------------------------------------
 Note: Same steps for Biogp. Similar names and similar steps.
