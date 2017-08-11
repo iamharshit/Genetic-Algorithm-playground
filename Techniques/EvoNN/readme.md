@@ -24,3 +24,4 @@ Hyper-parameters here basically are:
 
 ### Selecting best hyperparameters
 A population of these neural nets are optimised using genetic algorithms specifically i.e Selection-> Cross-over-> Mutation is done, we use Ant-colony optimisation technique to choose the best hyperparameters.
+
